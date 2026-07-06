@@ -1,0 +1,81 @@
+{
+  "fontFamily": {
+    "sans": { "value": "Inter, system-ui, sans-serif", "type": "fontFamily" }
+  },
+  "fontSize": {
+    "xs": { "value": "12px", "type": "fontSize" },
+    "sm": { "value": "14px", "type": "fontSize" },
+    "base": { "value": "16px", "type": "fontSize" },
+    "lg": { "value": "18px", "type": "fontSize" },
+    "xl": { "value": "20px", "type": "fontSize" },
+    "2xl": { "value": "24px", "type": "fontSize" },
+    "3xl": { "value": "32px", "type": "fontSize" }
+  },
+  "fontWeight": {
+    "regular": { "value": "400", "type": "fontWeight" },
+    "medium": { "value": "500", "type": "fontWeight" },
+    "semibold": { "value": "600", "type": "fontWeight" },
+    "bold": { "value": "700", "type": "fontWeight" }
+  },
+  "lineHeight": {
+    "tight": { "value": "1.25", "type": "lineHeight" },
+    "normal": { "value": "1.5", "type": "lineHeight" },
+    "relaxed": { "value": "1.75", "type": "lineHeight" }
+  },
+  "textStyle": {
+    "heading1": {
+      "value": {
+        "fontFamily": "{fontFamily.sans}",
+        "fontSize": "{fontSize.3xl}",
+        "fontWeight": "{fontWeight.bold}",
+        "lineHeight": "{lineHeight.tight}"
+      },
+      "type": "typography"
+    },
+    "heading2": {
+      "value": {
+        "fontFamily": "{fontFamily.sans}",
+        "fontSize": "{fontSize.2xl}",
+        "fontWeight": "{fontWeight.semibold}",
+        "lineHeight": "{lineHeight.tight}"
+      },
+      "type": "typography"
+    },
+    "heading3": {
+      "value": {
+        "fontFamily": "{fontFamily.sans}",
+        "fontSize": "{fontSize.xl}",
+        "fontWeight": "{fontWeight.semibold}",
+        "lineHeight": "{lineHeight.normal}"
+      },
+      "type": "typography"
+    },
+    "body": {
+      "value": {
+        "fontFamily": "{fontFamily.sans}",
+        "fontSize": "{fontSize.base}",
+        "fontWeight": "{fontWeight.regular}",
+        "lineHeight": "{lineHeight.normal}"
+      },
+      "type": "typography"
+    },
+    "label": {
+      "value": {
+        "fontFamily": "{fontFamily.sans}",
+        "fontSize": "{fontSize.sm}",
+        "fontWeight": "{fontWeight.medium}",
+        "lineHeight": "{lineHeight.normal}"
+      },
+      "type": "typography"
+    },
+    "small": {
+      "value": {
+        "fontFamily": "{fontFamily.sans}",
+        "fontSize": "{fontSize.sm}",
+        "fontWeight": "{fontWeight.regular}",
+        "lineHeight": "{lineHeight.normal}"
+      },
+      "type": "typography"
+    }
+  }
+}
