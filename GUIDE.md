@@ -1,214 +1,167 @@
-# Design System + Figma AI — Simple Guide
+# Design Library — Setup Guide
 
-Use this guide to generate screens with Figma AI while following one consistent design system from GitHub.
+One guide. Follow the checklist.
 
-**First step:** Create **your own** GitHub repo → [CREATE-YOUR-OWN-REPO.md](./CREATE-YOUR-OWN-REPO.md)  
-**Malay:** [BINA-REPO-SENDIRI.md](./BINA-REPO-SENDIRI.md)
-
----
-
-## What this is
-
-- **GitHub** = where design rules live (colors, fonts, spacing, components)
-- **Figma AI** = generates the screen
-- **You** = only give the business requirement (e.g. “login screen”)
-
-The AI should follow the design system so you only tweak **10–20%** of the output.
+**Repo:** https://github.com/AsyrafPauzi/design-library  
+**Tools:** Figma + **Tokens Studio** (Figma plugin) + Figma AI
 
 ---
 
-## Repo structure
+## What you are doing
+
+1. **Fork** this repo (templates already inside)
+2. **Sync** your Figma colors to GitHub using **Tokens Studio**
+3. **Edit** component files to match your Figma components
+4. **Generate screens** in Figma AI using `AI-INSTRUCTIONS.md`
 
 ```
-design-library/
-├── tokens/
-│   ├── colors.json        # brand colors
-│   ├── typography.json    # fonts & text styles
-│   └── spacing.json       # spacing & border radius
-├── components/
-│   ├── button.md          # button rules
-│   ├── input.md           # input rules
-│   └── card.md            # card rules
-├── AI-INSTRUCTIONS.md     # copy-paste prompt for Figma AI
-├── GUIDE.md               # this file
-└── README.md
+Figma (your components)
+    ↓ Tokens Studio
+GitHub (tokens + rules)
+    ↓ copy AI-INSTRUCTIONS.md
+Figma AI (new screens)
 ```
 
 ---
 
-## Quick start (easiest way)
+## Checklist
 
-### Step 1 — Open your repo
+### A — Fork the repo (5 min)
 
-Go to: `https://github.com/YOUR-USERNAME/design-library`  
-(Don't have one yet? Follow [CREATE-YOUR-OWN-REPO.md](./CREATE-YOUR-OWN-REPO.md))
-
-### Step 2 — Copy the AI prompt
-
-1. Open **`AI-INSTRUCTIONS.md`**
-2. Copy everything inside the code block (between the ``` marks)
-
-### Step 3 — Use Figma AI
-
-1. Open Figma → start Figma AI / Make
-2. **Paste the prompt first**
-3. Add what screen you want
-
-**Example:**
-
-```
-[paste AI-INSTRUCTIONS here]
-
-Create a login screen with:
-- Email field
-- Password field
-- Login button
-- "Forgot password?" link
-```
-
-### Step 4 — Review
-
-Check colors, spacing, and components match the design system. Fix only what’s off.
+- [ ] Open https://github.com/AsyrafPauzi/design-library
+- [ ] Click **Fork** → **Create fork**
+- [ ] You now have: `github.com/YOUR-USERNAME/design-library`
 
 ---
 
-## Standing prompt (save this)
+### B — Install Tokens Studio in Figma (5 min)
 
-Keep this and reuse every time. Full version is in `AI-INSTRUCTIONS.md`.
+**Tokens Studio** = Figma plugin that syncs colors/fonts/spacing between Figma and GitHub.
 
-```
-DESIGN SYSTEM RULES — follow strictly:
-
-COLORS: Primary #2563EB, Background #FFFFFF, Text #0F172A, Border #E2E8F0
-FONT: Inter — H1 32px bold, Body 16px, Label 14px medium
-SPACING: 4, 8, 16, 24, 32 px only
-
-COMPONENTS:
-- Button: blue bg, white text, 8px radius, 44px height
-- Input: white bg, border, label on top, 44px height
-- Card: white bg, border, 12px radius, 24px padding
-
-RULES:
-1. Do NOT invent new colors
-2. Do NOT invent new component styles
-3. Use spacing scale only
-```
-
-Then add your screen requirement below it.
+- [ ] Open Figma
+- [ ] Menu → **Plugins** → **Find more plugins**
+- [ ] Search **Tokens Studio for Figma** → Install
+- [ ] Open the plugin in your design file
 
 ---
 
-## Better results (optional): sync GitHub → Figma
+### C — Connect Tokens Studio to your GitHub repo (10 min)
 
-Figma AI works best when variables and components already exist **in Figma**.
-
-| Step | Action |
-|------|--------|
-| 1 | Install **Tokens Studio for Figma** (Figma plugin) |
-| 2 | Connect this GitHub repo |
-| 3 | Import `tokens/colors.json`, `typography.json`, `spacing.json` |
-| 4 | Create Button, Input, Card in Figma using those variables |
-| 5 | Publish as a **team library** |
-| 6 | When using Figma AI, enable that library + paste the standing prompt |
-
-```
-GitHub (tokens)  →  Tokens Studio  →  Figma variables  →  Figma AI
-```
+- [ ] In Tokens Studio → **Settings** (gear icon)
+- [ ] **Add storage** → **GitHub**
+- [ ] Log in to GitHub
+- [ ] Select **your forked repo** (`YOUR-USERNAME/design-library`)
+- [ ] Set folder to `tokens` if asked
+- [ ] Save
 
 ---
 
-## Customize your brand
+### D — Sync colors from Figma → GitHub (10 min)
 
-Edit these files, then commit to GitHub:
+**If you use Figma Variables for colors:**
 
-| File | What to change |
-|------|----------------|
+- [ ] In Tokens Studio, link your Figma color variables
+- [ ] Click **Push to GitHub** (or Export)
+- [ ] This updates `tokens/colors.json` automatically
+
+**If you don't use Figma Variables — manual way:**
+
+- [ ] Click each component in Figma → copy HEX color from **Fill**
+- [ ] On GitHub, open `tokens/colors.json` → click **Edit** (pencil)
+- [ ] Replace only the HEX codes after `"value":`
+- [ ] **Commit changes**
+
+Repeat for `tokens/typography.json` (fonts) and `tokens/spacing.json` (spacing) if needed.
+
+---
+
+### E — Match your components (15 min)
+
+Templates are in `components/` — edit on GitHub to match your Figma:
+
+Click your component in Figma, note the values, then edit on GitHub:
+
+| File | What to copy from Figma |
+|------|-------------------------|
+| `components/button.md` | color, height, padding, corner radius |
+| `components/input.md` | border, height, padding, corner radius |
+| `components/card.md` | background, padding, corner radius |
+
+- [ ] Edit `components/button.md` → **Commit**
+- [ ] Edit `components/input.md` → **Commit**
+- [ ] Edit `components/card.md` → **Commit**
+
+---
+
+### F — Update AI prompt (5 min)
+
+- [ ] Open `AI-INSTRUCTIONS.md` on GitHub → **Edit**
+- [ ] Change colors, fonts, spacing, and component rules to match your design
+- [ ] **Commit changes**
+
+---
+
+### G — Test Figma AI (5 min)
+
+- [ ] Open `AI-INSTRUCTIONS.md` on GitHub
+- [ ] Copy everything inside the code block
+- [ ] In Figma, open **Figma AI** (design agent)
+- [ ] Paste the prompt, then add:
+
+```
+Create a login screen with email, password, and login button.
+```
+
+- [ ] Check result — should follow your design system
+- [ ] If wrong, fix files in parts D–F and try again
+
+---
+
+### H — Every new screen
+
+- [ ] Copy `AI-INSTRUCTIONS.md`
+- [ ] Paste in Figma AI
+- [ ] Describe the screen you need
+- [ ] Tweak ~10–20% if needed
+
+---
+
+## Final checklist
+
+- [ ] Forked repo
+- [ ] Tokens Studio installed & connected to GitHub
+- [ ] `tokens/colors.json` has my colors (via Tokens Studio or manual)
+- [ ] `components/*.md` matches my Figma components
+- [ ] `AI-INSTRUCTIONS.md` updated
+- [ ] Tested in Figma AI — looks correct
+
+---
+
+## Files in this repo
+
+| File | Purpose |
+|------|---------|
 | `tokens/colors.json` | Your brand colors |
-| `tokens/typography.json` | Your fonts & sizes |
+| `tokens/typography.json` | Fonts & text sizes |
 | `tokens/spacing.json` | Spacing scale |
-| `components/*.md` | Component rules |
-| `AI-INSTRUCTIONS.md` | Update the copy-paste prompt to match |
-
-After editing, re-import in Tokens Studio if you use Figma sync.
-
----
-
-## Workflow summary
-
-```
-┌─────────────────────────┐
-│  1. Design system       │  GitHub repo (setup once)
-│     colors, components  │
-└───────────┬─────────────┘
-            │
-            ▼
-┌─────────────────────────┐
-│  2. Copy AI prompt      │  AI-INSTRUCTIONS.md
-└───────────┬─────────────┘
-            │
-            ▼
-┌─────────────────────────┐
-│  3. Figma AI            │  prompt + "create login screen"
-└───────────┬─────────────┘
-            │
-            ▼
-┌─────────────────────────┐
-│  4. Review & tweak      │  ~10–20% manual fixes
-└─────────────────────────┘
-```
+| `components/button.md` | Button rules |
+| `components/input.md` | Input rules |
+| `components/card.md` | Card rules |
+| `AI-INSTRUCTIONS.md` | Copy into Figma AI every time |
 
 ---
 
-## Do / Don't
+## Tips
 
-| Do | Don't |
-|----|--------|
-| Paste the standing prompt every time | Let AI design from scratch |
-| Start with button, input, card | Build 50 components on day one |
-| Keep tokens in GitHub | Hardcode random colors in each screen |
-| Use Tokens Studio for Figma sync | Expect Figma AI to read GitHub by itself |
-
----
-
-## Example prompts
-
-**Login screen**
-```
-[paste AI-INSTRUCTIONS]
-
-Create a login screen with email, password, login button, and forgot password link.
-```
-
-**Profile screen**
-```
-[paste AI-INSTRUCTIONS]
-
-Create a profile screen with avatar, name, email, and edit profile button.
-```
-
-**Checkout screen**
-```
-[paste AI-INSTRUCTIONS]
-
-Create a checkout summary card with item list, total price, and pay now button.
-```
-
----
-
-## Need help?
-
-- **Tokens:** see `tokens/` folder
-- **Components:** see `components/` folder
-- **AI prompt:** see `AI-INSTRUCTIONS.md`
-- **Create repo:** [CREATE-YOUR-OWN-REPO.md](./CREATE-YOUR-OWN-REPO.md)
-- **Add Figma to GitHub:** [HOW-TO-ADD-FIGMA-TO-GITHUB.md](./HOW-TO-ADD-FIGMA-TO-GITHUB.md)
+- **Don't upload .fig files** to GitHub — only tokens and rules
+- **Don't invent new colors** in Figma AI — always paste `AI-INSTRUCTIONS.md` first
+- **Tokens Studio** keeps Figma and GitHub in sync when you change colors
+- Start with 3 components (button, input, card). Add more later.
 
 ---
 
 ## TL;DR
 
-1. Create **your own** GitHub repo  
-2. Add tokens + components from your Figma  
-3. Copy prompt from `AI-INSTRUCTIONS.md`  
-4. Paste into Figma AI + describe the screen  
-5. Done
+```
+Fork repo → Tokens Studio sync colors → Edit components → Update AI-INSTRUCTIONS.md → Figma AI
+```
