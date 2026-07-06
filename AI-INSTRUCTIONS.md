@@ -7,7 +7,7 @@ Copy everything below the line and paste before every Figma AI prompt.
 ```
 DESIGN SYSTEM RULES — follow strictly:
 
-Source: GitHub design-library (tokens + components)
+Source: https://github.com/AsyrafPauzi/design-library (tokens + components)
 
 COLORS (use only these):
 - Primary: #2563EB (buttons, links, active states)

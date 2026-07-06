@@ -25,11 +25,21 @@ Your Figma components  →  you copy the values  →  GitHub (rules for AI)
 ## What you need
 
 - [ ] Figma account (you already have this)
-- [ ] GitHub repo: https://github.com/AsyrafPauzi/design-library
+- [ ] **Your own** GitHub repo (create it first — see [CREATE-YOUR-OWN-REPO.md](./CREATE-YOUR-OWN-REPO.md))
 - [ ] 30–60 minutes (one time setup)
 
 **You do NOT need:** Git installed, VS Code, or coding skills.  
 You can edit everything **inside the GitHub website**.
+
+> **Important:** Use **your own** repo (`github.com/YOUR-USERNAME/design-library`).  
+> Do not use someone else's repo — create yours first.
+
+---
+
+## Part 0 — Create your repo (if you haven't yet)
+
+Follow **[CREATE-YOUR-OWN-REPO.md](./CREATE-YOUR-OWN-REPO.md)** step by step.  
+Come back here after your repo exists.
 
 ---
 
@@ -54,7 +64,7 @@ Write down your main colors:
 
 ### Step 2: Put colors in GitHub
 
-1. Go to: https://github.com/AsyrafPauzi/design-library
+1. Go to **your** repo: `https://github.com/YOUR-USERNAME/design-library`
 2. Click `tokens` folder → click `colors.json`
 3. Click the **pencil icon** (Edit this file) on the top right
 4. Change the HEX values to **your** colors
@@ -199,7 +209,7 @@ If you use **Figma Variables** for colors:
 
 1. In Figma: **Plugins** → search **Tokens Studio for Figma** → Install
 2. Open the plugin → **Settings** → connect to GitHub
-3. Repo: `AsyrafPauzi/design-library`
+3. Repo: `YOUR-USERNAME/design-library` (your own repo)
 4. **Export** your Figma tokens → saves to `tokens/` folder automatically
 
 This syncs colors/spacing without typing JSON by hand.  
@@ -260,6 +270,6 @@ GITHUB (you fill this in)
 
 ## Need help?
 
-Share this repo with someone technical — they can help you fill in `colors.json` once from your Figma file. After that, you can maintain the `.md` files yourself using GitHub’s website editor.
+Share your repo with someone technical — they can help you fill in `colors.json` once from your Figma file. After that, you can maintain the `.md` files yourself using GitHub’s website editor.
 
-**Repo:** https://github.com/AsyrafPauzi/design-library
+**Haven't created a repo yet?** Start with [CREATE-YOUR-OWN-REPO.md](./CREATE-YOUR-OWN-REPO.md)

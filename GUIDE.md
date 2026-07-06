@@ -2,7 +2,8 @@
 
 Use this guide to generate screens with Figma AI while following one consistent design system from GitHub.
 
-**Repo:** https://github.com/AsyrafPauzi/design-library
+**First step:** Create **your own** GitHub repo → [CREATE-YOUR-OWN-REPO.md](./CREATE-YOUR-OWN-REPO.md)  
+**Malay:** [BINA-REPO-SENDIRI.md](./BINA-REPO-SENDIRI.md)
 
 ---
 
@@ -37,9 +38,10 @@ design-library/
 
 ## Quick start (easiest way)
 
-### Step 1 — Open the repo
+### Step 1 — Open your repo
 
-Go to: https://github.com/AsyrafPauzi/design-library
+Go to: `https://github.com/YOUR-USERNAME/design-library`  
+(Don't have one yet? Follow [CREATE-YOUR-OWN-REPO.md](./CREATE-YOUR-OWN-REPO.md))
 
 ### Step 2 — Copy the AI prompt
 
@@ -198,13 +200,15 @@ Create a checkout summary card with item list, total price, and pay now button.
 - **Tokens:** see `tokens/` folder
 - **Components:** see `components/` folder
 - **AI prompt:** see `AI-INSTRUCTIONS.md`
-- **Repo:** https://github.com/AsyrafPauzi/design-library
+- **Create repo:** [CREATE-YOUR-OWN-REPO.md](./CREATE-YOUR-OWN-REPO.md)
+- **Add Figma to GitHub:** [HOW-TO-ADD-FIGMA-TO-GITHUB.md](./HOW-TO-ADD-FIGMA-TO-GITHUB.md)
 
 ---
 
 ## TL;DR
 
-1. Open GitHub repo  
-2. Copy prompt from `AI-INSTRUCTIONS.md`  
-3. Paste into Figma AI + describe the screen  
-4. Done
+1. Create **your own** GitHub repo  
+2. Add tokens + components from your Figma  
+3. Copy prompt from `AI-INSTRUCTIONS.md`  
+4. Paste into Figma AI + describe the screen  
+5. Done

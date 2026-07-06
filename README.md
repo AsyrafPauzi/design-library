@@ -1,19 +1,55 @@
 # Design Library
 
-A simple design system for AI-generated screens (Figma AI, Cursor, etc.).
+Template design system for Figma AI. **Everything is pre-filled** — fork the repo and replace example values with your Figma design.
 
-**Before generating any screen, read this repo:**
-1. `tokens/` — colors, typography, spacing
-2. `components/` — button, input, card specs
-3. `AI-INSTRUCTIONS.md` — copy-paste rules for Figma AI
+**Repo:** https://github.com/AsyrafPauzi/design-library
 
 ---
 
-## Quick start (Figma AI)
+## Start here
 
-1. Open this repo on GitHub (or clone it)
-2. Copy the prompt from `AI-INSTRUCTIONS.md`
-3. Paste into Figma AI + add your screen requirement
+| Language | Checklist |
+|----------|-----------|
+| **English** | [START-HERE.md](./START-HERE.md) ← step-by-step checklist |
+| **Malay** | [MULA-KAT-SINI.md](./MULA-KAT-SINI.md) ← checklist Bahasa Melayu |
+
+---
+
+## How it works (Method 3 — template)
+
+1. **Fork** this repo (templates already included)
+2. **Copy** color/size values from your Figma components
+3. **Edit** the template files on GitHub — replace example values
+4. **Copy** `AI-INSTRUCTIONS.md` into Figma AI every time you design
+
+No coding. No creating files from scratch.
+
+---
+
+## What's already in this repo
+
+```
+design-library/
+├── tokens/                  ← templates (edit your colors/fonts/spacing)
+│   ├── colors.json
+│   ├── typography.json
+│   └── spacing.json
+├── components/              ← templates (edit to match your Figma)
+│   ├── button.md
+│   ├── input.md
+│   └── card.md
+├── AI-INSTRUCTIONS.md       ← copy-paste into Figma AI
+├── START-HERE.md            ← full checklist
+└── MULA-KAT-SINI.md         ← checklist (Malay)
+```
+
+---
+
+## Quick use (after setup)
+
+1. Open `AI-INSTRUCTIONS.md`
+2. Copy the prompt
+3. Paste in Figma AI + describe your screen
 
 Example:
 ```
@@ -24,34 +60,7 @@ Create a login screen with email, password, and login button.
 
 ---
 
-## Folder structure
+## More guides
 
-```
-design-library/
-├── tokens/
-│   ├── colors.json
-│   ├── typography.json
-│   └── spacing.json
-├── components/
-│   ├── button.md
-│   ├── input.md
-│   └── card.md
-├── AI-INSTRUCTIONS.md    ← standing prompt for AI
-└── README.md
-```
-
----
-
-## Sync to Figma (optional)
-
-Use **Tokens Studio for Figma** plugin:
-1. Install plugin in Figma
-2. Connect this GitHub repo
-3. Import `tokens/*.json` → creates Figma variables
-4. Build components in Figma using those variables
-
----
-
-## Customize
-
-Edit the JSON files with your brand colors and fonts. Commit to GitHub. Re-import in Figma if using Tokens Studio.
+- [HOW-TO-CREATE-COLORS-JSON.md](./HOW-TO-CREATE-COLORS-JSON.md) — how to fill in `colors.json`
+- [HOW-TO-ADD-FIGMA-TO-GITHUB.md](./HOW-TO-ADD-FIGMA-TO-GITHUB.md) — Figma → GitHub details

@@ -21,11 +21,21 @@ Cuma **tulis nilai-nilai** dari Figma ke GitHub supaya AI boleh baca.
 ## Apa yang diperlukan
 
 - [ ] Akaun Figma (dah ada)
-- [ ] Repo GitHub: https://github.com/AsyrafPauzi/design-library
+- [ ] **Repo GitHub sendiri** (buat dulu — tengok [BINA-REPO-SENDIRI.md](./BINA-REPO-SENDIRI.md))
 - [ ] 30–60 minit (setup sekali je)
 
 **Tak perlu:** install Git, VS Code, atau tahu coding.  
 Semua boleh buat dalam **website GitHub** je.
+
+> **Penting:** Guna repo **sendiri** (`github.com/NAMA-USERNAME-KAU/design-library`).  
+> Jangan guna repo orang lain — buat sendiri dulu.
+
+---
+
+## Bahagian 0 — Bina repo dulu (kalau belum ada)
+
+Ikut **[BINA-REPO-SENDIRI.md](./BINA-REPO-SENDIRI.md)** langkah demi langkah.  
+Balik sini lepas repo dah siap.
 
 ---
 
@@ -49,7 +59,7 @@ Tulis warna utama:
 
 ### Dalam GitHub
 
-1. Pergi: https://github.com/AsyrafPauzi/design-library
+1. Pergi **repo sendiri**: `https://github.com/NAMA-USERNAME-KAU/design-library`
 2. Klik folder `tokens` → klik `colors.json`
 3. Klik icon **pensel** (Edit) atas kanan
 4. Tukar nilai HEX kepada warna dia
@@ -125,7 +135,7 @@ Setiap kali guna Figma AI:
 Kalau guna **Figma Variables**:
 
 1. Figma → **Plugins** → cari **Tokens Studio for Figma**
-2. Connect ke GitHub repo `AsyrafPauzi/design-library`
+2. Connect ke repo sendiri `NAMA-USERNAME-KAU/design-library`
 3. Export tokens → auto masuk folder `tokens/`
 
 Component `.md` masih kena tulis manual (atau minta kawan technical tolong).
@@ -166,5 +176,5 @@ GITHUB (isi manual atau Tokens Studio)
 FIGMA AI (generate screen ikut design system)
 ```
 
-**Repo:** https://github.com/AsyrafPauzi/design-library  
-**Panduan English:** [HOW-TO-ADD-FIGMA-TO-GITHUB.md](./HOW-TO-ADD-FIGMA-TO-GITHUB.md)
+**Belum buat repo?** Mula kat [BINA-REPO-SENDIRI.md](./BINA-REPO-SENDIRI.md)  
+**English guide:** [CREATE-YOUR-OWN-REPO.md](./CREATE-YOUR-OWN-REPO.md) · [HOW-TO-ADD-FIGMA-TO-GITHUB.md](./HOW-TO-ADD-FIGMA-TO-GITHUB.md)
